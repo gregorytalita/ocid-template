@@ -11,12 +11,20 @@
  * @since Twenty Twenty 1.0
  */
 
+	$has_sidebar_4   = is_active_sidebar( 'sidebar-4' );
+
 ?>
 			<footer id="site-footer" role="contentinfo" class="header-footer-group">
 
 				<div class="section-inner">
 
 					<div class="footer-credits">
+
+						<?php if ($has_sidebar_4) {?>
+							<div class="copyright-widgets">
+								<?php dynamic_sidebar( 'sidebar-4' ); ?>
+							</div>
+						<?php } ?>
 
 						<p class="footer-copyright">&copy;
 							Copyright

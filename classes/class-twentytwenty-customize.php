@@ -154,16 +154,16 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 				array(
 					'default'           => array(
 						'content'       => array(
-							'text'      => '#000000',
-							'accent'    => '#cd2653',
-							'secondary' => '#6d6d6d',
-							'borders'   => '#dcd7ca',
+							'text'      => '#01579B',
+							'accent'    => '#01579B',
+							'secondary' => '#01579B',
+							'borders'   => '#01579B',
 						),
 						'header-footer' => array(
-							'text'      => '#000000',
-							'accent'    => '#cd2653',
-							'secondary' => '#6d6d6d',
-							'borders'   => '#dcd7ca',
+							'text'      => '#01579B',
+							'accent'    => '#01579B',
+							'secondary' => '#01579B',
+							'borders'   => '#01579B',
 						),
 					),
 					'type'              => 'theme_mod',
