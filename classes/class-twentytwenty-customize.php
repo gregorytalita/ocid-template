@@ -141,7 +141,7 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 			$wp_customize->add_setting(
 				'accent_hue',
 				array(
-					'default'           => 344,
+					'default'           => 206,
 					'type'              => 'theme_mod',
 					'sanitize_callback' => 'absint',
 					'transport'         => 'postMessage',

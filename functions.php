@@ -40,7 +40,7 @@ function twentytwenty_theme_support() {
 	add_theme_support(
 		'custom-background',
 		array(
-			'default-color' => 'f5efe0',
+			'default-color' => '01579B',
 		)
 	);
 
