@@ -19,7 +19,7 @@
 @supports ( font-variation-settings: normal ) {
 
 	.editor-styles-wrapper > * {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+		font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	}
 
 }
@@ -51,22 +51,22 @@
 }
 
 /* ----------------------------------------------
-Inter variable font. Usage:
+Source Sans Proiable font. Usage:
 
 @supports (font-variation-settings: normal) {
-	html { font-family: "Inter var", sans-serif; }
+	html { font-family: "Source Sans Pro", sans-serif; }
 }
 ---------------------------------------------- */
 
 @font-face {
-	font-family: "Inter var";
+	font-family: "Source Sans Pro";
 	font-weight: 100 900; /* stylelint-disable-line font-weight-notation */
 	font-style: normal;
 	src: url(../fonts/inter/Inter-upright-var.woff2) format("woff2");
 }
 
 @font-face {
-	font-family: "Inter var";
+	font-family: "Source Sans Pro";
 	font-weight: 100 900; /* stylelint-disable-line font-weight-notation */
 	font-style: italic;
 	src: url(../fonts/inter/Inter-italic-var.woff2) format("woff2");
@@ -152,7 +152,7 @@ Inter variable font. Usage:
 	.editor-styles-wrapper cite,
 	.editor-styles-wrapper figcaption,
 	.editor-styles-wrapper .wp-caption-text {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+		font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	}
 
 }

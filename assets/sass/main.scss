@@ -1,4 +1,9 @@
+@import './abstracts/fonts.scss';
+
 @import './default/library.scss';
+
+@import './base/base.scss';
+@import './base/typography.scss';
 
 @import './components/footer-copyright.scss';
 @import './components/footer-widgets.scss';

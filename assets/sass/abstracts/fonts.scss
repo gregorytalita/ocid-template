@@ -1,0 +1,49 @@
+/* Fonts ------------------------------------- */
+
+/* ----------------------------------------------
+Source Sans Proiable font. Usage:
+
+@supports (font-variation-settings: normal) {
+	html { font-family: 'Source Sans Pro', sans-serif; }
+}
+---------------------------------------------- */
+
+@font-face {
+	font-family: "Source Sans Pro";
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+	src: url(./assets/fonts/sourceSansPro/SourceSansPro-Black.ttf) format("ttf");
+}
+
+@font-face {
+	font-family: "Source Sans Pro";
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url(./assets/fonts/sourceSansPro/SourceSansPro-Bold.ttf) format("ttf");
+}
+
+@font-face {
+	font-family: "Source Sans Pro";
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+	src: url(./assets/fonts/sourceSansPro/SourceSansPro-ExtraLight.ttf) format("ttf");
+}
+
+@font-face {
+	font-family: "Source Sans Pro";
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	src: url(./assets/fonts/sourceSansPro/SourceSansPro-Light.ttf) format("ttf");
+}
+
+@font-face {
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url(./assets/fonts/sourceSansPro/SourceSansPro-Regular.ttf) format("ttf");
+}
