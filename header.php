@@ -57,22 +57,9 @@
 
 		</div><!-- .header-titles -->
 
-		<header id="site-header" role="banner">
+		<header id="site-header" role="banner" style="background-image: url('<?php echo esc_url( get_theme_mod( 'customizer_cover_background' ) ); ?>');">
 
 			<div class="header-inner section-inner">
-
-				<div class="header-titles-wrapper">
-
-					<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal"  data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
-						<span class="toggle-inner">
-							<span class="toggle-icon">
-								<?php twentytwenty_the_theme_svg( 'ellipsis' ); ?>
-							</span>
-							<span class="toggle-text"><?php _e( 'Menu', 'twentytwenty' ); ?></span>
-						</span>
-					</button><!-- .nav-toggle -->
-
-				</div><!-- .header-titles-wrapper -->
 
 				<div class="header-navigation-wrapper">
 
@@ -147,13 +134,6 @@
 				</div><!-- .header-navigation-wrapper -->
 
 			</div><!-- .header-inner -->
-
-			<?php
-			// Output the search modal (if it is activated in the customizer).
-			if ( true === $enable_header_search ) {
-				get_template_part( 'template-parts/modal-search' );
-			}
-			?>
 
 		</header><!-- #site-header -->
 

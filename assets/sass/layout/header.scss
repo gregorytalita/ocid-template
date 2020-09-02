@@ -1,0 +1,44 @@
+.header-titles {
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-inner .toggle {
+	align-items: center;
+	display: flex;
+	overflow: visible;
+	padding: 0 2rem;
+}
+
+.header-inner .toggle svg {
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+
+.header-inner .toggle path {
+	fill: currentColor;
+}
+
+.header-inner .toggle:focus .toggle-text,
+.header-inner .toggle:hover .toggle-text {
+	text-decoration: underline;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+  height: 33.6rem;
+}
+
+.header-navigation-wrapper {
+  display: flex;
+}
+
+.primary-menu-wrapper {
+  display: block;
+  width: 100%;
+}
