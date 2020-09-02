@@ -57,7 +57,7 @@
 
 		</div><!-- .header-titles -->
 
-		<header id="site-header" role="banner" style="background-image: url('<?php echo esc_url( get_theme_mod( 'customizer_cover_background' ) ); ?>');">
+		<header id="site-header" role="banner" style="background-image: linear-gradient(to right bottom, <?php echo esc_attr(get_theme_mod('cover_template_overlay_background_color')); ?>cc, <?php echo esc_attr(get_theme_mod('cover_template_overlay_text_color')); ?>cc), url('<?php echo esc_url( get_theme_mod( 'customizer_cover_background' ) ); ?>');">
 
 			<div class="header-inner section-inner">
 

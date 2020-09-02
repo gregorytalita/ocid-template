@@ -323,8 +323,8 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 					$wp_customize,
 					'cover_template_overlay_background_color',
 					array(
-						'label'       => __( 'Overlay Background Color', 'twentytwenty' ),
-						'description' => __( 'The color used for the overlay. Defaults to the accent color.', 'twentytwenty' ),
+						'label'       => __( 'Overlay cover gradient Color', 'twentytwenty' ),
+						'description' => __( 'The color used for the cover gradient.', 'twentytwenty' ),
 						'section'     => 'cover_template_options',
 					)
 				)
@@ -345,42 +345,12 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 					$wp_customize,
 					'cover_template_overlay_text_color',
 					array(
-						'label'       => __( 'Overlay Text Color', 'twentytwenty' ),
-						'description' => __( 'The color used for the text in the overlay.', 'twentytwenty' ),
+						'description' => __( 'The color used for the cover gradient.', 'twentytwenty' ),
 						'section'     => 'cover_template_options',
 					)
 				)
 			);
 
-			/* Overlay Color Opacity --------- */
-
-			$wp_customize->add_setting(
-				'cover_template_overlay_opacity',
-				array(
-					'default'           => 80,
-					'sanitize_callback' => 'absint',
-					'transport'         => 'postMessage',
-				)
-			);
-
-			$wp_customize->add_control(
-				'cover_template_overlay_opacity',
-				array(
-					'label'       => __( 'Overlay Opacity', 'twentytwenty' ),
-					'description' => __( 'Make sure that the contrast is high enough so that the text is readable.', 'twentytwenty' ),
-					'section'     => 'cover_template_options',
-					'type'        => 'range',
-					'input_attrs' => twentytwenty_customize_opacity_range(),
-				)
-			);
-
-			$wp_customize->selective_refresh->add_partial(
-				'cover_template_overlay_opacity',
-				array(
-					'selector' => '.cover-color-overlay',
-					'type'     => 'cover_opacity',
-				)
-			);
 		}
 
 		/**
