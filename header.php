@@ -30,43 +30,38 @@
 		wp_body_open();
 		?>
 
-		<header id="site-header" class="header-footer-group" role="banner">
+		<div class="header-titles">
+
+		<?php
+			// Site title or logo.
+			twentytwenty_site_logo();
+
+			// Site description.
+			twentytwenty_site_description();
+		?>
+
+		<?php
+
+		// Check whether the header search is activated in the customizer.
+		$enable_header_search = get_theme_mod( 'enable_header_search', true );
+
+		if ( true === $enable_header_search ) {
+			get_search_form(
+				array(
+					'label' => __( 'Buscar no OCID', 'twentytwenty' ),
+				)
+			);
+		}
+		?>
+
+
+		</div><!-- .header-titles -->
+
+		<header id="site-header" role="banner">
 
 			<div class="header-inner section-inner">
 
 				<div class="header-titles-wrapper">
-
-					<?php
-
-					// Check whether the header search is activated in the customizer.
-					$enable_header_search = get_theme_mod( 'enable_header_search', true );
-
-					if ( true === $enable_header_search ) {
-
-						?>
-
-						<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
-							<span class="toggle-inner">
-								<span class="toggle-icon">
-									<?php twentytwenty_the_theme_svg( 'search' ); ?>
-								</span>
-								<span class="toggle-text"><?php _e( 'Search', 'twentytwenty' ); ?></span>
-							</span>
-						</button><!-- .search-toggle -->
-
-					<?php } ?>
-
-					<div class="header-titles">
-
-						<?php
-							// Site title or logo.
-							twentytwenty_site_logo();
-
-							// Site description.
-							twentytwenty_site_description();
-						?>
-
-					</div><!-- .header-titles -->
 
 					<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal"  data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
 						<span class="toggle-inner">
@@ -143,31 +138,11 @@
 
 							</div><!-- .nav-toggle-wrapper -->
 
-							<?php
-						}
-
-						if ( true === $enable_header_search ) {
-							?>
-
-							<div class="toggle-wrapper search-toggle-wrapper">
-
-								<button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
-									<span class="toggle-inner">
-										<?php twentytwenty_the_theme_svg( 'search' ); ?>
-										<span class="toggle-text"><?php _e( 'Search', 'twentytwenty' ); ?></span>
-									</span>
-								</button><!-- .search-toggle -->
-
-							</div>
-
-							<?php
-						}
-						?>
-
 						</div><!-- .header-toggles -->
 						<?php
-					}
-					?>
+						}
+						?>
+					<?php } ?>
 
 				</div><!-- .header-navigation-wrapper -->
 

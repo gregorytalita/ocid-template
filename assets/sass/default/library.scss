@@ -950,39 +950,6 @@ button.toggle {
 
 /* Search Form ------------------------------- */
 
-.search-form {
-	align-items: stretch;
-	display: flex;
-	flex-wrap: nowrap;
-	margin: 0 0 -0.8rem -0.8rem;
-}
-
-.search-form .search-field,
-.search-form .search-submit {
-	margin: 0 0 0.8rem 0.8rem;
-}
-
-.search-form label {
-	align-items: stretch;
-	display: flex;
-	font-size: inherit;
-	margin: 0;
-	width: 100%;
-}
-
-.search-form .search-field {
-	width: 100%;
-}
-
-.search-form .search-submit {
-	flex-shrink: 0;
-}
-
-.search-form .search-submit:focus,
-.search-form .search-submit:hover {
-	text-decoration: none;
-}
-
 
 /* Social Icons ------------------------------ */
 
@@ -1105,10 +1072,6 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 .site-logo a,
 .site-logo img {
 	display: block;
-}
-
-.header-titles .site-logo .site-logo {
-	margin: 0;
 }
 
 .site-logo img {
@@ -5221,24 +5184,6 @@ a.to-the-top > * {
 		max-width: 50%;
 		padding: 0;
 		text-align: left;
-	}
-
-	.header-titles {
-		align-items: baseline;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-		margin: -1rem 0 0 -2.4rem;
-	}
-
-	.header-titles .site-title,
-	.header-titles .site-logo,
-	.header-titles .site-description {
-		margin: 1rem 0 0 2.4rem;
-	}
-
-	.wp-custom-logo .header-titles {
-		align-items: center;
 	}
 
 	/* HEADER NAVIGATION */
