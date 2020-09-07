@@ -25,7 +25,13 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-
+		<div id="barra-brasil">
+			<ul id="menu-barra-temp" style="list-style:none;">
+				<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
+						<a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
+				</li>
+			</ul>
+		</div>
 		<?php
 		wp_body_open();
 		?>
@@ -100,38 +106,22 @@
 
 							</nav><!-- .primary-menu-wrapper -->
 
-						<?php
-					}
-
-					if ( true === $enable_header_search || has_nav_menu( 'expanded' ) ) {
-						?>
-
-						<div class="header-toggles hide-no-js">
-
-						<?php
-						if ( has_nav_menu( 'expanded' ) ) {
-							?>
-
-							<div class="toggle-wrapper nav-toggle-wrapper has-expanded-menu">
-
-								<button class="toggle nav-toggle desktop-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
-									<span class="toggle-inner">
-										<span class="toggle-text"><?php _e( 'Menu', 'twentytwenty' ); ?></span>
-										<span class="toggle-icon">
-											<?php twentytwenty_the_theme_svg( 'ellipsis' ); ?>
-										</span>
-									</span>
-								</button><!-- .nav-toggle -->
-
-							</div><!-- .nav-toggle-wrapper -->
-
-						</div><!-- .header-toggles -->
-						<?php
-						}
-						?>
-					<?php } ?>
+					<?php
+					}?>
 
 				</div><!-- .header-navigation-wrapper -->
+
+				<div class="header-title">
+
+					<?php
+						if ( is_singular() ) {
+							the_title( '<h1 class="entry-title">', '</h1>' );
+						} else {
+							the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
+						}
+					?>
+
+				</div>
 
 			</div><!-- .header-inner -->
 

@@ -2,7 +2,18 @@
   padding: 16px 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  max-width: 107.6rem;
+  margin: 0 auto;
+  width: 100vw;
+}
+
+.header-title {
+  color: #FFFFFF;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 6.5rem 0 .8rem;
+  align-self: flex-start;
 }
 
 .header-inner .toggle {
@@ -29,16 +40,13 @@
 
 .header-inner {
   display: flex;
-  justify-content: center;
+  align-items: center;
   padding: 3rem 0;
   height: 33.6rem;
+  flex-direction: column;
+  max-width: 107.6rem;
 }
 
 .header-navigation-wrapper {
-  display: flex;
-}
-
-.primary-menu-wrapper {
-  display: block;
   width: 100%;
 }
