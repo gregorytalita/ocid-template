@@ -1,8 +1,14 @@
-.events-wrapper {
-  display: flex;
-  justify-content: start;
-  align-items: stretch;
-  flex-wrap: wrap;
+.events {
+  &-page {
+    display: flex;
+  }
+
+  &-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
 }
 
 .event {

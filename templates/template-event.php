@@ -17,11 +17,13 @@ $post_list = get_posts( array(
 	'numberposts' => $postsAmount
 ) );
 
+$has_sidebar   = is_active_sidebar( 'blog-sidebar-1' );
+
 ?>
 
 <main id="site-content" role="main">
 
-	<div class="main-container">
+	<div class="main-container events-page">
 		<div class="events-wrapper">
 			<?php
 
@@ -33,6 +35,12 @@ $post_list = get_posts( array(
 				}
 				?>
 		</div>
+
+		<?php if ($has_sidebar) {?>
+			<div class="blog-sidebar">
+				<?php dynamic_sidebar( 'blog-sidebar-1' ); ?>
+			</div>
+		<?php } ?>
 	</div>
 
 </main><!-- #site-content -->

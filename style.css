@@ -600,10 +600,6 @@ th {
   width: 100vw; }
 
 /* Sections ---------------------------------- */
-section {
-  padding: 5rem 0;
-  width: 100%; }
-
 .section-inner {
   margin-left: auto;
   margin-right: auto;
@@ -3211,10 +3207,6 @@ a.to-the-top > * {
     margin-top: 1.8rem; }
   /* Helper Classes ------------------------- */
   /* SECTIONS */
-  section {
-    padding: 8rem 0; }
-  .section-inner {
-    width: calc(100% - 8rem); }
   /* Site Header --------------------------- */
   .site-title {
     font-size: 2.4rem;
@@ -3308,8 +3300,6 @@ a.to-the-top > * {
     /*rtl:ignore*/
     margin-right: 4rem; }
   /* Post: Archive ------------------------- */
-  .archive-header {
-    padding: 8rem 0; }
   .reduced-spacing .archive-header {
     padding-bottom: 3rem; }
   .archive-title {
@@ -4482,6 +4472,28 @@ input[type="search"]:focus {
   outline: none;
   outline-offset: 0; }
 
+.blog-sidebar {
+  max-width: 276px;
+  height: 888px;
+  background-color: #F0F3FF;
+  padding: 24px;
+  border-radius: 10px; }
+  .blog-sidebar > .widget .widget-title {
+    font-size: 2.4rem;
+    color: #1C1D22;
+    font-weight: 700;
+    margin-bottom: 32px; }
+  .blog-sidebar > .widget ul > li:not(:last-child) {
+    margin-bottom: 32px; }
+  .blog-sidebar > .widget ul > li > * {
+    font-size: 16px;
+    color: #1C1D22;
+    font-weight: 700;
+    line-height: 24px; }
+  .blog-sidebar > .widget ul > li > span {
+    margin-top: 8px;
+    font-weight: 300; }
+
 #barra-brasil {
   padding: 16px 0; }
   #barra-brasil .brasil-flag .link-barra {
@@ -4740,6 +4752,9 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
   margin-right: 4.5rem;
   padding-right: 0;
   width: unset; }
+
+.events-page {
+  display: flex; }
 
 .events-wrapper {
   display: flex;

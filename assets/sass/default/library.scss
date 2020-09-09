@@ -678,11 +678,6 @@ th {
 
 /* Sections ---------------------------------- */
 
-section {
-	padding: 5rem 0;
-	width: 100%;
-}
-
 .section-inner {
 	margin-left: auto;
 	margin-right: auto;
@@ -4150,15 +4145,6 @@ a.to-the-top > * {
 
 	/* SECTIONS */
 
-	section {
-		padding: 8rem 0;
-	}
-
-	.section-inner {
-		width: calc(100% - 8rem);
-	}
-
-
 	/* Site Header --------------------------- */
 
 
@@ -4323,10 +4309,6 @@ a.to-the-top > * {
 	}
 
 	/* Post: Archive ------------------------- */
-
-	.archive-header {
-		padding: 8rem 0;
-	}
 
 	.reduced-spacing .archive-header {
 		padding-bottom: 3rem;

@@ -815,11 +815,6 @@ th {
   left: calc(50% - 50vw);
   width: 100vw; }
 
-/* Sections ---------------------------------- */
-section {
-  padding: 5rem 0;
-  width: 100%; }
-
 .section-inner {
   margin-left: auto;
   margin-right: auto;
@@ -3752,8 +3747,6 @@ a.to-the-top > * {
     margin-top: 1.8rem; }
   /* Helper Classes ------------------------- */
   /* SECTIONS */
-  section {
-    padding: 8rem 0; }
   .section-inner {
     width: calc(100% - 8rem); }
   /* Site Header --------------------------- */
@@ -3851,8 +3844,6 @@ a.to-the-top > * {
     /*rtl:ignore*/
     margin-right: 4rem; }
   /* Post: Archive ------------------------- */
-  .archive-header {
-    padding: 8rem 0; }
   .reduced-spacing .archive-header {
     padding-bottom: 3rem; }
   .archive-title {
@@ -3864,8 +3855,6 @@ a.to-the-top > * {
     padding-top: 8rem; }
   /* Post: Single -------------------------- */
   /* POST HEADER */
-  .singular .entry-header {
-    padding: 8rem 0; }
   .entry-categories {
     margin-bottom: 3rem; }
   .entry-categories-inner {
@@ -4170,8 +4159,7 @@ a.to-the-top > * {
     margin-left: 4rem;
     width: auto; }
   /* FOOTER WIDGETS */
-  .footer-widgets-outer-wrapper {
-    padding: 8rem 0; }
+
   .footer-widgets-wrapper {
     display: flex;
     justify-content: space-between;
