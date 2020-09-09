@@ -4432,6 +4432,25 @@ a:focus {
   .copyright-widgets > *:not(:last-child) {
     margin-right: 34px; }
 
+.load-more-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 54px 0 26px; }
+
+.load-more-button {
+  width: 294px;
+  height: 48px;
+  padding: 14px;
+  background-color: #01579B;
+  box-shadow: 0px 2px 12px #2859F866;
+  text-align: center;
+  text-transform: initial;
+  transition: opacity .2s; }
+  .load-more-button:hover {
+    text-decoration: none;
+    opacity: .8; }
+
 .search-form {
   position: relative;
   background-color: #F0F3FF;
@@ -4561,7 +4580,7 @@ div#wrapper-barra-brasil {
 /* Primary Menu ---------------------------- */
 .primary-menu-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   min-height: 3rem;
   align-items: center; }
 

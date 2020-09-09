@@ -22,38 +22,30 @@ if ( $next_post || $prev_post ) {
 
 	?>
 
-	<nav class="pagination-single section-inner<?php echo esc_attr( $pagination_classes ); ?>" aria-label="<?php esc_attr_e( 'Post', 'twentytwenty' ); ?>" role="navigation">
+	<nav class="main-container" role="navigation">
 
-		<hr class="styled-separator is-style-wide" aria-hidden="true" />
-
-		<div class="pagination-single-inner">
-
-			<?php
-			if ( $prev_post ) {
-				?>
-
-				<a class="previous-post" href="<?php echo esc_url( get_permalink( $prev_post->ID ) ); ?>">
-					<span class="arrow" aria-hidden="true">&larr;</span>
-					<span class="title"><span class="title-inner"><?php echo wp_kses_post( get_the_title( $prev_post->ID ) ); ?></span></span>
-				</a>
-
+		<div class="">
+			<div class="events-wrapper">
 				<?php
-			}
 
-			if ( $next_post ) {
-				?>
+					if ( $prev_post ) {
+						setup_postdata( $prev_post );
+							get_template_part( 'template-parts/post-card');
+						wp_reset_postdata();
+					}
 
-				<a class="next-post" href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>">
-					<span class="arrow" aria-hidden="true">&rarr;</span>
-						<span class="title"><span class="title-inner"><?php echo wp_kses_post( get_the_title( $next_post->ID ) ); ?></span></span>
-				</a>
-				<?php
-			}
-			?>
+					?>
+					<?php
 
-		</div><!-- .pagination-single-inner -->
+					if ( $next_post ) {
+						setup_postdata( $next_post);
+							get_template_part( 'template-parts/post-card');
+						wp_reset_postdata();
+					}
 
-		<hr class="styled-separator is-style-wide" aria-hidden="true" />
+					?>
+			</div>
+		</div>
 
 	</nav><!-- .pagination-single -->
 

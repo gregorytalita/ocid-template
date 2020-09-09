@@ -24,16 +24,22 @@ $has_sidebar   = is_active_sidebar( 'blog-sidebar-1' );
 <main id="site-content" role="main">
 
 	<div class="main-container events-page">
-		<div class="events-wrapper">
-			<?php
 
-				if ( $post_list ) {
-					foreach ( $post_list as $post ) : setup_postdata( $post );
-						get_template_part( 'template-parts/post-card');
-					endforeach;
-					wp_reset_postdata();
-				}
-				?>
+		<div class="">
+			<div class="events-wrapper">
+				<?php
+
+					if ( $post_list ) {
+						foreach ( $post_list as $post ) : setup_postdata( $post );
+							get_template_part( 'template-parts/post-card');
+						endforeach;
+						wp_reset_postdata();
+					}
+
+					?>
+			</div>
+
+			<?php get_template_part( 'template-parts/load-more'); ?>
 		</div>
 
 		<?php if ($has_sidebar) {?>
