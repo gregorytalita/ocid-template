@@ -4,6 +4,7 @@
 
 @import './base/base.scss';
 @import './base/typography.scss';
+@import './base/utilities.scss';
 
 @import './components/footer-copyright.scss';
 @import './components/footer-widgets.scss';
@@ -12,3 +13,5 @@
 @import './layout/governmentBar.scss';
 @import './layout/header.scss';
 @import './layout/navbar.scss';
+
+@import './pages/events.scss';

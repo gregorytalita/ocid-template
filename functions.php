@@ -358,6 +358,32 @@ function twentytwenty_sidebar_registration() {
 		'after_widget'  => '</div></div>',
 	);
 
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'          => __( 'Blog Sidebar', 'twentyseventeen' ),
+				'id'            => 'blog-sidebar-1',
+				'description'   => __( 'Add widgets here to appear in your sidebar on blog posts and archive pages.', 'twentyseventeen' ),
+				'before_widget' => '<section id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</section>',
+				'before_title'  => '<h2 class="widget-title">',
+				'after_title'   => '</h2>',
+			)
+		)
+	);
+
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __( 'Main Menu', 'twentytwenty' ),
+				'id'          => 'main-menu-widget',
+				'description' => __( 'Widgets in this area will be displayed at the main menu bar.', 'twentytwenty' ),
+			)
+		)
+	);
+
 	// Footer #1.
 	register_sidebar(
 		array_merge(
@@ -733,7 +759,7 @@ function twentytwenty_get_elements_array() {
 				'background-color' => array( ':root .has-background-background-color' ),
 			),
 			'text'       => array(
-				'color'            => array( 'body', '.entry-title a', ':root .has-primary-color' ),
+				'color'            => array( 'body', ':root .has-primary-color' ),
 				'background-color' => array( ':root .has-primary-background-color' ),
 			),
 			'secondary'  => array(
@@ -755,7 +781,7 @@ function twentytwenty_get_elements_array() {
 			),
 			'background' => array(
 				'color'            => array( '.social-icons a', 'body:not(.overlay-header) .primary-menu ul', '.header-footer-group button', '.header-footer-group .button', '.header-footer-group .faux-button', '.header-footer-group .wp-block-button:not(.is-style-outline) .wp-block-button__link', '.header-footer-group .wp-block-file__button', '.header-footer-group input[type="button"]', '.header-footer-group input[type="reset"]', '.header-footer-group input[type="submit"]' ),
-				'background-color' => array( '#site-header', '.footer-nav-widgets-wrapper', '.menu-modal', '.menu-modal-inner', '.search-modal-inner', '.archive-header', '.singular .entry-header', '.singular .featured-media:before', '.wp-block-pullquote:before' ),
+				'background-color' => array( '#site-header', '.footer-nav-widgets-wrapper', '.menu-modal', '.menu-modal-inner', '.search-modal-inner', '.wp-block-pullquote:before' ),
 			),
 			'text'       => array(
 				'color'               => array( '.header-footer-group', 'body:not(.overlay-header) #site-header .toggle', '.menu-modal .toggle' ),

@@ -9,6 +9,8 @@
  * @since Twenty Twenty 1.0
  */
 
+	$has_main_menu   = is_active_sidebar( 'main-menu-widget' );
+
 ?><!DOCTYPE html>
 
 <html class="no-js" <?php language_attributes(); ?>>
@@ -59,6 +61,12 @@
 			);
 		}
 		?>
+
+		<?php if ($has_main_menu) {?>
+			<div class="main-menu-widgets">
+				<?php dynamic_sidebar( 'main-menu-widget' ); ?>
+			</div>
+		<?php } ?>
 
 
 		</div><!-- .header-titles -->
@@ -114,11 +122,7 @@
 				<div class="header-title">
 
 					<?php
-						if ( is_singular() ) {
-							the_title( '<h1 class="entry-title">', '</h1>' );
-						} else {
-							the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
-						}
+						the_title( '<h1 class="entry-title">', '</h1>' );
 					?>
 
 				</div>
