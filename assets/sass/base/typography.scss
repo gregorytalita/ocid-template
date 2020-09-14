@@ -1,7 +1,7 @@
 @supports ( font-variation-settings: normal ) {
 
 	body {
-		font-family: "Source Sans Pro", sans-serif;
+		font-family: $font-family;
   }
 
 }
@@ -122,45 +122,6 @@ hr {
 	margin: 4rem 0;
 }
 
-.entry-content hr,
-hr.styled-separator {
-	background: linear-gradient(to left, currentColor calc(50% - 16px), transparent calc(50% - 16px), transparent calc(50% + 16px), currentColor calc(50% + 16px));
-	background-color: transparent !important;
-	border: none;
-	height: 0.1rem;
-	overflow: visible;
-	position: relative;
-}
-
-.entry-content hr:not(.has-background),
-hr.styled-separator {
-	color: #6d6d6d;
-}
-
-.entry-content hr::before,
-.entry-content hr::after,
-hr.styled-separator::before,
-hr.styled-separator::after {
-	background: currentColor;
-	content: "";
-	display: block;
-	height: 1.6rem;
-	position: absolute;
-	top: calc(50% - 0.8rem);
-	transform: rotate(22.5deg);
-	width: 0.1rem;
-}
-
-.entry-content hr::before,
-hr.styled-separator::before {
-	left: calc(50% - 0.5rem);
-}
-
-.entry-content hr::after,
-hr.styled-separator::after {
-	right: calc(50% - 0.5rem);
-}
-
 a {
 	color: #cd2653;
 	text-decoration: underline;
@@ -172,23 +133,8 @@ a:focus {
 }
 
 .entry-content {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: $font-family;
 	letter-spacing: normal;
-}
-
-.entry-content h1,
-.entry-content h2,
-.entry-content h3,
-.entry-content h4,
-.entry-content h5,
-.entry-content h6,
-.entry-content cite,
-.entry-content figcaption,
-.entry-content table,
-.entry-content address,
-.entry-content .wp-caption-text,
-.entry-content .wp-block-file {
-	font-family: "Source Sans Pro", sans-serif;
 }
 
 @supports ( font-variation-settings: normal ) {
@@ -205,7 +151,7 @@ a:focus {
 	.entry-content address,
 	.entry-content .wp-caption-text,
 	.entry-content .wp-block-file {
-		font-family: "Source Sans Pro", sans-serif;
+		font-family: $font-family;
 	}
 }
 
@@ -215,14 +161,14 @@ a:focus {
 .widget_text dl,
 .widget_text dt,
 .widget-content .rssSummary {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: $font-family;
 	letter-spacing: normal;
 }
 
 .widget-content cite,
 .widget-content figcaption,
 .widget-content .wp-caption-text {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: $font-family;
 }
 
 @supports ( font-variation-settings: normal ) {
@@ -230,6 +176,6 @@ a:focus {
 	.widget-content cite,
 	.widget-content figcaption,
 	.widget-content .wp-caption-text {
-		font-family: "Source Sans Pro", sans-serif;
+		font-family: $font-family;
 	}
 }

@@ -10,34 +10,44 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */
-
+$has_sidebar   = is_active_sidebar( 'blog-sidebar-1' );
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+		<div class="main-container events-page">
+			<div class="entry-content">
 
-		<div class="entry-content">
+				<?php
+				if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
+					the_excerpt();
+				} else {
 
-			<?php
-			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
-				the_excerpt();
-			} else {
-				the_content( __( 'Continue reading', 'twentytwenty' ) );
-			}
-			?>
+					?>
 
-		</div><!-- .entry-content -->
+					<h2><?php the_title(); ?></h2>
 
+				<?php
+
+					if ( ! is_search() ) {
+						get_template_part( 'template-parts/featured-image' );
+					}
+
+					the_content( __( 'Continue reading', 'twentytwenty' ) );
+				}
+				?>
+
+			</div><!-- .entry-content -->
+
+			<?php if ($has_sidebar) {?>
+				<div class="blog-sidebar">
+					<?php dynamic_sidebar( 'blog-sidebar-1' ); ?>
+				</div>
+			<?php } ?>
+
+		</div><!-- .main-container .events-page -->
 	</div><!-- .post-inner -->
-
-	<?php
-
-	if ( ! is_search() ) {
-		get_template_part( 'template-parts/featured-image' );
-	}
-
-	?>
 
 	<div class="section-inner">
 		<?php
