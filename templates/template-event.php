@@ -41,12 +41,6 @@ $has_sidebar   = is_active_sidebar( 'blog-sidebar-1' );
 
 			<?php get_template_part( 'template-parts/load-more'); ?>
 		</div>
-
-		<?php if ($has_sidebar) {?>
-			<div class="blog-sidebar">
-				<?php dynamic_sidebar( 'blog-sidebar-1' ); ?>
-			</div>
-		<?php } ?>
 	</div>
 
 </main><!-- #site-content -->

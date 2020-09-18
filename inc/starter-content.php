@@ -28,7 +28,9 @@ function twentytwenty_get_starter_content() {
 			),
 			// Place one core-defined widgets in the second footer widget area.
 			'sidebar-2' => array(
-				'text_business_info',
+				'archives',
+				'archives',
+				'archives',
 			),
 			'sidebar-3' => array(
 				'text_about',
@@ -36,6 +38,12 @@ function twentytwenty_get_starter_content() {
 			'sidebar-4' => array(
 				'text_about',
 			),
+			'blog-sidebar-1' => array(
+				'recent-posts'
+			),
+			'main-menu-widget' => array(
+
+			)
 		),
 
 		// Create the custom image attachments used as post thumbnails for pages.
@@ -199,9 +207,8 @@ function twentytwenty_get_starter_content() {
 				'items' => array(
 					'link_yelp',
 					'link_facebook',
-					'link_twitter',
 					'link_instagram',
-					'link_email',
+					'link_youtube',
 				),
 			),
 		),
